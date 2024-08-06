@@ -61,7 +61,7 @@ const Header = () => {
             <li className="flex items-center mx-4">
               <SiSuzuki className="mx-2" size={20} color="pink" />
               <NavLink className="text-gray-500  md:text-md text-xs">
-                Asif Nexa
+                Nexa Bariatu
               </NavLink>
               <li className="flex items-center lg:hidden flex mx-4">
                 <MdAddCall className="mr-1" />
