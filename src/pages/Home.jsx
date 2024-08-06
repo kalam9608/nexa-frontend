@@ -11,8 +11,10 @@ import Button from "../components/lyout.jsx/Button";
 import { NavLink } from "react-router-dom";
 import FeedBack from "../components/FeedBack";
 import ciaz from "../assets/ciaz.webp";
-import home from "../assets/car1.webp"
-
+import home from "../assets/car1.webp";
+import jimny from "../assets/jimny.webp";
+import Ignis from "../assets/ignis.webp";
+import fronx from "../assets/FRONX.webp";
 const Home = () => {
   // const [images, setImages] = useState([
   //   { image: "src/assets/car1.webp" },
@@ -25,6 +27,15 @@ const Home = () => {
     },
     {
       imageUrl: home,
+    },
+    {
+      imageUrl: jimny,
+    },
+    {
+      imageUrl: fronx,
+    },
+    {
+      imageUrl: Ignis,
     },
   ];
   const [activeImageIndex, setActiveImageIndex] = useState("");
@@ -67,7 +78,7 @@ const Home = () => {
               >
                 <img
                   src={item.imageUrl}
-                  className="object-fill h-[40vh] w-[100vw] sm:h-[60vh] md:h-[60vh] lg:h-[60vh] xl:h-[80vh]"
+                  className="object-fill h-[40%] w-[100%] sm:h-[60%] md:h-[60%] lg:h-[60%] xl:h-[80%]"
                   alt={`Slide ${index}`}
                 />
               </button>

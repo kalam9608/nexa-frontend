@@ -50,7 +50,7 @@ function Enquiry() {
 
   return (
     <>
-      <div className="w-[90vw] md:flex md:justify-between space-y-4 md:space-y-0">
+      <div className="w-full md:flex md:justify-between space-y-4 md:space-y-0">
         <form onSubmit={handleSubmit(onSubmit)} className="md:w-1/3 p-4">
           <div className="space-y-5 w-full space-y-4 p-4 rounded-lg shadow-lg">
             <div className="md:flex inline  md:space-x-5">
