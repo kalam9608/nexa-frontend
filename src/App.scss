@@ -1,0 +1,177 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+  --header-height: 4rem;
+
+  /*========== Colors ==========*/
+  --first-color: #00b4d8;
+  --white-color: #ffffff;
+  // --text-color: #ffffff;
+  // --text-color: #1e1e1e;
+
+  --text-color-dark: #bfbfbf;
+  --body-color: #1e1e1e;
+  --body-color: #ffffff;
+
+  /*========== Font and typography ==========*/
+  /* 1rem == 16px */
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Playfair Display", serif;
+  --biggest-font-size: 2.75rem;
+  --bigger-font-Size: 2rem;
+  --big-font-size: 1.75rem;
+  --h1-font-size: 1.625rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 0.625rem;
+  --normal-font-size: 0.825rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.5rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semibold: 500;
+  --font-bold: 600;
+
+  /* ============= border =========== */
+  --border-size: 1px;
+  --border-radius: 0.5rem;
+  --border-radius-large: 7.5rem;
+
+  /*========== z index ==========*/
+  --z-fixed: 100;
+}
+
+/*========== Responsive Font and typography ==========*/
+
+@media screen and (min-width: 1366px) {
+  :root {
+    --biggest-font-size: 5rem;
+    --bigger-font-Size: 3.75rem;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.625rem;
+  }
+}
+
+/*========== BASE ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 3px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 194, 193);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    max-height: 5px !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 0.5rem;
+  margin: auto;
+}
+
+/* =========== header ========== */
+.header {
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 163, 217, 0.1);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  max-width: 1224px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+/* ===== RESPONSIVE NAVBAR ======= Media query */
+@media screen and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--body-color);
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+  }
+  .nav__menu__left {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    background-color: var(--body-color);
+    transition: 0.4s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 2rem 2rem;
+    z-index: var(--z-fixed);
+  }
+}
+
+.show {
+  top: 3rem;
+}
