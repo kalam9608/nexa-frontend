@@ -7,11 +7,12 @@ import "swiper/css/pagination";
 import Container from "../components/lyout.jsx/Container";
 import ImageViewer from "../components/ImageViewer";
 import car from "../assets/car2.jpg";
+import nexa from "../assets/nexa.jpeg"
 import Button from "../components/lyout.jsx/Button";
 import { NavLink } from "react-router-dom";
 import FeedBack from "../components/FeedBack";
 import ciaz from "../assets/ciaz.webp";
-import home from "../assets/car1.webp";
+import home from "../assets/nexa-black-additon.jpg";
 import jimny from "../assets/jimny.webp";
 import Ignis from "../assets/ignis.webp";
 import fronx from "../assets/FRONX.webp";
@@ -66,7 +67,7 @@ const Home = () => {
           {images.map((item, index) => (
             <SwiperSlide
               key={index}
-              className="flex justify-center items-center"
+              className="flex justify-center items-center bg-black/[0.6]"
             >
               <button
                 className="m-1"
@@ -100,7 +101,7 @@ const Home = () => {
           </h1>
           <div className="w-full max-w-5xl md:flex inline md:space-x-8 justify-between  ">
             <img
-              src={car}
+              src={nexa}
               alt="Car"
               className="md:w-1-6 w-full md:h-60 h-30 object-cover rounded-md"
             />

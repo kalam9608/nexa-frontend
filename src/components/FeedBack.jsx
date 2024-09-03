@@ -6,20 +6,19 @@ import avatar from "../assets/avatar.jpg";
 const feedbacks = [
   {
     id: 1,
-    message: "Great service and friendly staff!",
-    customer: "John Doe",
+    message: "Great service and excelent delivery by RN-ASIF ",
+    customer: "Avinash Suman",
   },
   {
     id: 2,
     message: "I love my new car from Nexa Showroom!",
-    customer: "Jane Smith",
+    customer: "Bishnu Shahu",
   },
   {
     id: 3,
     message: "Highly recommend this place for your next car purchase.",
-    customer: "Michael Johnson",
+    customer: "Md Maqshud Alam",
   },
-  // Add more feedback as needed
 ];
 const FeedBack = () => {
   const settings = {

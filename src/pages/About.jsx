@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Container from "../components/lyout.jsx/Container";
 import car from "../assets/car2.jpg";
+import nexa from "../assets/nexa.jpeg"
+
 import FeedBack from "../components/FeedBack";
 const About = () => {
   return (
@@ -13,7 +15,7 @@ const About = () => {
             </h1>
             <div className="w-full max-w-5xl md:flex inline md:space-x-8 justify-between  ">
               <img
-                src={car}
+                src={nexa}
                 alt="Car"
                 className="md:w-1-6 w-full md:h-60 h-30 object-cover rounded-md"
               />

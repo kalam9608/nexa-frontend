@@ -8,7 +8,7 @@ const Textarea = React.forwardRef(function Input(
   return (
     <div className="w-full">
       {label && (
-        <label className="inline-block mb-1 pl-1" htmlFor={id}>
+        <label className="inline-block mb-1 pl-1 text-gray-800" htmlFor={id}>
           {label}
         </label>
       )}

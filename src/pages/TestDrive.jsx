@@ -79,7 +79,7 @@ function TestDrive() {
 
         <form onSubmit={handleSubmit(onSubmit)} className="md:w-1/3 p-4">
           <div className="w-full space-y-4 p-4 rounded-lg shadow-lg bg-gray-100">
-            <h2 className="text-2xl font-bold mb-6 text-center">
+            <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
               Schedule Your Test Drive
             </h2>
             <div className="md:flex md:space-x-5">

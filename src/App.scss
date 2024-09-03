@@ -9,7 +9,7 @@
   /*========== Colors ==========*/
   --first-color: #00b4d8;
   --white-color: #ffffff;
-  // --text-color: #ffffff;
+  --text-color: #ffffff;
   // --text-color: #1e1e1e;
 
   --text-color-dark: #bfbfbf;
@@ -165,6 +165,7 @@ img {
     padding: 0.5rem 0rem;
     text-align: center;
     background-color: var(--body-color);
+    background-color: #171616d4;
     transition: 0.4s;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 2rem 2rem;

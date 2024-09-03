@@ -14,6 +14,11 @@ const Header = () => {
 
   const navItems = [
     {
+      name: "Home",
+      slug: "/",
+      active: true,
+    },
+    {
       name: "About us",
       slug: "about",
       active: true,
@@ -54,13 +59,13 @@ const Header = () => {
   const [isShow, setIsShow] = useState(false);
 
   return (
-    <header className={`shadow sticky z-50 top-0 header `}>
+    <header className={`shadow sticky z-50 top-0 header bg-black/[0.8]`}>
       <nav className="nav">
         <div>
           <ul>
             <li className="flex items-center mx-4">
               <SiSuzuki className="mx-2" size={20} color="pink" />
-              <NavLink className="text-gray-500  md:text-md text-xs">
+              <NavLink className="text-white  md:text-md text-xs">
                 Nexa Bariatu
               </NavLink>
               <li className="flex items-center lg:hidden flex mx-4">
@@ -83,7 +88,7 @@ const Header = () => {
                     onClick={() => setIsShow(false)}
                     className={({ isActive }) =>
                       `${
-                        isActive ? "text-blue-500" : "text-black-500"
+                        isActive ? "text-blue-700" : "text-black-500"
                       } text-sm font-normal	 `
                     }
                   >
