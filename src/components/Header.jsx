@@ -59,7 +59,7 @@ const Header = () => {
   const [isShow, setIsShow] = useState(false);
 
   return (
-    <header className={`shadow sticky z-50 top-0 header bg-black/[0.8]`}>
+    <header className={`shadow sticky z-50 top-0 header bg-[#2565d4]`}>
       <nav className="nav">
         <div>
           <ul>
@@ -70,7 +70,7 @@ const Header = () => {
               </NavLink>
               <li className="flex items-center lg:hidden flex mx-4">
                 <MdAddCall className="mr-1" />
-                <NavLink className="text-sm font-normal	 text-gray-900">
+                <NavLink className="text-sm font-normal	 text-white">
                   7463883147
                 </NavLink>
               </li>
@@ -88,8 +88,8 @@ const Header = () => {
                     onClick={() => setIsShow(false)}
                     className={({ isActive }) =>
                       `${
-                        isActive ? "text-blue-700" : "text-black-500"
-                      } text-sm font-normal	 `
+                        isActive ? "text-black" : "text-black-500"
+                      } text-base font-bold 	 `
                     }
                   >
                     {item.name}
@@ -112,7 +112,7 @@ const Header = () => {
             <li className="flex items-center lg:hidden flex mr-4">
               <GiHamburgerMenu
                 size={24}
-                color="black"
+                color="white"
                 className="cursor-pointer"
                 onClick={() => setIsShow((prev) => !prev)}
               />

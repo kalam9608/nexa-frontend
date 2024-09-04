@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import Container from "../components/lyout.jsx/Container";
 import ImageViewer from "../components/ImageViewer";
 import car from "../assets/car2.jpg";
-import nexa from "../assets/nexa.jpeg"
+import nexa from "../assets/nexa.jpeg";
 import Button from "../components/lyout.jsx/Button";
 import { NavLink } from "react-router-dom";
 import FeedBack from "../components/FeedBack";
@@ -16,6 +16,8 @@ import home from "../assets/nexa-black-additon.jpg";
 import jimny from "../assets/jimny.webp";
 import Ignis from "../assets/ignis.webp";
 import fronx from "../assets/FRONX.webp";
+import { FaArrowRight } from "react-icons/fa";
+
 const Home = () => {
   // const [images, setImages] = useState([
   //   { image: "src/assets/car1.webp" },
@@ -25,6 +27,7 @@ const Home = () => {
   const images = [
     {
       imageUrl: ciaz,
+
     },
     {
       imageUrl: home,
@@ -67,7 +70,7 @@ const Home = () => {
           {images.map((item, index) => (
             <SwiperSlide
               key={index}
-              className="flex justify-center items-center bg-black/[0.6]"
+              className="relative flex justify-center items-center bg-black/[0.6] h-[12rem] sm:h-[35rem]"
             >
               <button
                 className="m-1"
@@ -95,6 +98,23 @@ const Home = () => {
       )}
 
       <div className="mx-auto  rounded-lg shadow-sm overflow-hidden">
+        <div className="mt-4 flex justify-center mx-6">
+          <NavLink
+            to="about"
+            className=" md:text-md text-xs border-2 border-blue-800 text-blue-800 text-base font-bold px-2 py-2 rounded-sm"
+          >
+            Book Now
+          </NavLink>
+          <div>
+            <NavLink
+              to="/test_drive"
+              className=" md:text-md text-xs text-blue-800 text-base  p-2 rounded-md"
+            >
+              Schedule Your Test Drive
+            </NavLink>
+            <FaArrowRight size={24} className="ml-2" color="blue" />
+          </div>
+        </div>
         <div className="p-8 flex flex-col	justify-center	items-center	">
           <h1 className="mb-6 text-3xl font-semibold text-blue-800 underline">
             About Us
